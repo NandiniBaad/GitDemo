@@ -13,6 +13,7 @@ public class FilterWebTableStreams {
 		// TODO Auto-generated method stub
 		System.setProperty("webdriver.chrome.driver", "C:\\Nandini\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		System.out.println("Hello from Streams Tutorial GitDemo");
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/#/offers");
 		driver.findElement(By.id("search-field")).sendKeys("Rice");
 		List<WebElement> veggies = driver.findElements(By.xpath("//tr/td[1]"));//get all veggies names with rice
